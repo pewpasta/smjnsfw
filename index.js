@@ -5,7 +5,7 @@ const https = require('https');
 const hello = ["https://www.reddit.com/r/porn/random/.json", "https://www.reddit.com/r/porngifs/random/.json", "https://www.reddit.com/r/porn_gifs/random/.json", "https://www.reddit.com/r/porninfifteenseconds/random/.json", "https://www.reddit.com/r/besthqporngifs/random/.json", "https://www.reddit.com/r/porninaminute/random/.json", "https://www.reddit.com/r/GirlsFinishingTheJob/random/.json", "https://www.reddit.com/r/cumsluts/random/.json", "https://www.reddit.com/r/Blowjobs/random/.json", "https://www.reddit.com/r/canthold/random/.json", "https://www.reddit.com/r/SecondsOfPorn/random/.json", "https://www.reddit.com/r/Step_Fantasy_GIFs/random/.json", "https://www.reddit.com/r/StepFantasyProduction/random/.json", "https://www.reddit.com/r/NSFW_Caption/random/.json", "https://www.reddit.com/r/FuckGaming/random/.json", "https://www.reddit.com/r/BlowjobGirls/random/.json", "https://www.reddit.com/r/passionx/random/.json", "https://www.reddit.com/r/NSFW_HTML5/random/.json", "https://www.reddit.com/r/nsfwhardcore/random/.json", "https://www.reddit.com/r/SheLikesItRough/random/.json", "https://www.reddit.com/r/AmateurPorn/random/.json", "https://www.reddit.com/r/nsfwhardcore/random/.json", "https://www.reddit.com/r/HugeDickTinyChick/random/.json", "https://www.reddit.com/r/freeuse/random/.json", "https://www.reddit.com/r/IndianBabes/random/.json", "https://www.reddit.com/r/IndiansGoneWild/random/.json", "https://www.reddit.com/r/TittyDrop/random/.json","https://www.reddit.com/r/GifsOfRemoval/random/.json", "https://www.reddit.com/r/quiver/random/.json", "https://www.reddit.com/r/SexInFrontOfOthers/random/.json", "https://www.reddit.com/r/boobbounce/random/.json", "https://www.reddit.com/r/dirtysmall/random/.json"]
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
-  let channel = client.channels.cache.get('910123851168481312');
+  let channel = client.channels.cache.get('911138367897481216');
   channel.send("🔄 **| Porn spam Starting...**").then((msg) => {
     var hello2 = hello[Math.floor(Math.random() * hello.length)];
     console.log(hello2)
@@ -228,7 +228,7 @@ client.on("ready", () => {
 }
 );
 client.on("message", message => {
-  if (message.content.toLowerCase() == "!porn") {
+  if (message.content.toLowerCase() == "!p") {
     if (message.channel.nsfw === false) {
       message.channel.send("Not a NSFW channel retard 🥱")
       return;
