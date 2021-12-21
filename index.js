@@ -228,7 +228,7 @@ client.on("ready", () => {
 }
 );
 client.on("message", message => {
-  if (message.content.toLowerCase() == "!p") {
+  if (message.content.toLowerCase() == "!porn") {
     if (message.channel.nsfw === false) {
       message.channel.send("Not a NSFW channel retard 🥱")
       return;
