@@ -249,7 +249,7 @@ client.on("message", message => {
       const embed = new Discord.MessageEmbed()
         .setTitle(`${memeTitle}`)
         .setURL(`${memeUrl}`)
-        .setColor("GREEN")
+        .setColor("RANDOM")
         //.setImage(memeImage)
         .setFooter(`👍: ${memeUpvotes} | 💬: ${memeNumComments}`);
 
