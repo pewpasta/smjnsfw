@@ -2,7 +2,7 @@ const Discord = require("discord.js-12");
 const client = new Discord.Client();
 const got = require("got");
 const https = require('https');
-const hello = ["https://www.reddit.com/r/porn/random/.json", "https://www.reddit.com/r/porngifs/random/.json", "https://www.reddit.com/r/porn_gifs/random/.json", "https://www.reddit.com/r/porninfifteenseconds/random/.json", "https://www.reddit.com/r/porninaminute/random/.json", "https://www.reddit.com/r/GirlsFinishingTheJob/random/.json", "https://www.reddit.com/r/cumsluts/random/.json", "https://www.reddit.com/r/Blowjobs/random/.json", "https://www.reddit.com/r/canthold/random/.json", "https://www.reddit.com/r/SecondsOfPorn/random/.json", "https://www.reddit.com/r/Step_Fantasy_GIFs/random/.json", "https://www.reddit.com/r/StepFantasyProduction/random/.json", "https://www.reddit.com/r/NSFW_Caption/random/.json", "https://www.reddit.com/r/FuckGaming/random/.json", "https://www.reddit.com/r/BlowjobGirls/random/.json", "https://www.reddit.com/r/passionx/random/.json", "https://www.reddit.com/r/NSFW_HTML5/random/.json", "https://www.reddit.com/r/nsfwhardcore/random/.json", "https://www.reddit.com/r/SheLikesItRough/random/.json", "https://www.reddit.com/r/AmateurPorn/random/.json", "https://www.reddit.com/r/nsfwhardcore/random/.json", "https://www.reddit.com/r/HugeDickTinyChick/random/.json", "https://www.reddit.com/r/freeuse/random/.json","https://www.reddit.com/r/TittyDrop/random/.json","https://www.reddit.com/r/GifsOfRemoval/random/.json", "https://www.reddit.com/r/quiver/random/.json", "https://www.reddit.com/r/SexInFrontOfOthers/random/.json", "https://www.reddit.com/r/boobbounce/random/.json", "https://www.reddit.com/r/dirtysmall/random/.json","https://www.reddit.com/r/koreannsfw/random/.json","https://www.reddit.com/r/60fpsporn/random/.json","https://www.reddit.com/r/thiccerthanyouthought/random/.json","https://www.reddit.com/r/BreedingMaterial/random/.json","https://www.reddit.com/r/juicyasians/random/.json","https://www.reddit.com/r/RealGirls/random/.json","https://www.reddit.com/r/boobbounce/random/.json","https://www.reddit.com/r/1000ccplus/random/.json","https://www.reddit.com/r/SlimandStacked/random/.json","https://www.reddit.com/r/rice_cakes/random/.json"]
+const hello = ["https://www.reddit.com/r/porn/random/.json", "https://www.reddit.com/r/porngifs/random/.json", "https://www.reddit.com/r/porn_gifs/random/.json", "https://www.reddit.com/r/porninfifteenseconds/random/.json", "https://www.reddit.com/r/porninaminute/random/.json", "https://www.reddit.com/r/GirlsFinishingTheJob/random/.json", "https://www.reddit.com/r/cumsluts/random/.json", "https://www.reddit.com/r/Blowjobs/random/.json", "https://www.reddit.com/r/canthold/random/.json", "https://www.reddit.com/r/SecondsOfPorn/random/.json", "https://www.reddit.com/r/Step_Fantasy_GIFs/random/.json", "https://www.reddit.com/r/StepFantasyProduction/random/.json", "https://www.reddit.com/r/NSFW_Caption/random/.json", "https://www.reddit.com/r/FuckGaming/random/.json", "https://www.reddit.com/r/BlowjobGirls/random/.json", "https://www.reddit.com/r/passionx/random/.json", "https://www.reddit.com/r/NSFW_HTML5/random/.json", "https://www.reddit.com/r/nsfwhardcore/random/.json", "https://www.reddit.com/r/SheLikesItRough/random/.json", "https://www.reddit.com/r/AmateurPorn/random/.json", "https://www.reddit.com/r/nsfwhardcore/random/.json", "https://www.reddit.com/r/HugeDickTinyChick/random/.json", "https://www.reddit.com/r/freeuse/random/.json","https://www.reddit.com/r/TittyDrop/random/.json","https://www.reddit.com/r/GifsOfRemoval/random/.json", "https://www.reddit.com/r/quiver/random/.json", "https://www.reddit.com/r/SexInFrontOfOthers/random/.json", "https://www.reddit.com/r/boobbounce/random/.json", "https://www.reddit.com/r/dirtysmall/random/.json","https://www.reddit.com/r/koreannsfw/random/.json","https://www.reddit.com/r/60fpsporn/random/.json","https://www.reddit.com/r/thiccerthanyouthought/random/.json","https://www.reddit.com/r/BreedingMaterial/random/.json","https://www.reddit.com/r/juicyasians/random/.json","https://www.reddit.com/r/RealGirls/random/.json","https://www.reddit.com/r/boobbounce/random/.json","https://www.reddit.com/r/1000ccplus/random/.json","https://www.reddit.com/r/SlimandStacked/random/.json","https://www.reddit.com/r/rice_cakes/random/.json",]
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
   let channel = client.channels.cache.get('911138367897481216');
@@ -37,7 +37,7 @@ client.on("ready", () => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
@@ -53,7 +53,7 @@ client.on("ready", () => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
@@ -69,7 +69,7 @@ client.on("ready", () => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
@@ -85,7 +85,7 @@ client.on("ready", () => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
@@ -101,7 +101,7 @@ client.on("ready", () => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
@@ -149,7 +149,7 @@ client.on("ready", () => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
@@ -165,7 +165,7 @@ client.on("ready", () => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
@@ -181,7 +181,7 @@ client.on("ready", () => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
@@ -197,7 +197,7 @@ client.on("ready", () => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
@@ -213,7 +213,7 @@ client.on("ready", () => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
@@ -264,7 +264,7 @@ client.on("message", message => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               message.channel.send(mp4Link)
             });
           }
@@ -280,7 +280,7 @@ client.on("message", message => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               message.channel.send(mp4Link)
             });
           }
@@ -296,7 +296,7 @@ client.on("message", message => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               message.channel.send(mp4Link)
             });
           }
@@ -312,7 +312,7 @@ client.on("message", message => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               message.channel.send(mp4Link)
             });
           }
@@ -328,7 +328,7 @@ client.on("message", message => {
               data += chunk;
             });
             resp.on('end', () => {
-              mp4Link = JSON.parse(data).gfyItem.Url;
+              mp4Link = JSON.parse(data).gfyItem.mp4Url;
               channel.send(mp4Link)
             });
           }
