@@ -6,7 +6,6 @@ const hello = ["https://www.reddit.com/r/porn/random/.json","https://www.reddit.
 client.on("ready", () => {
   console.log(`Logged in as ${client.user.tag}!`);
   let channel = client.channels.cache.get('911138367897481216');
-  channel.send("🔄 **| Porn spam Starting...**").then((msg) => {
     var hello2 = hello[Math.floor(Math.random() * hello.length)];
     console.log(hello2)
     got(hello2).then(response => {
@@ -111,13 +110,7 @@ client.on("ready", () => {
         channel.send(memeImage)
       }
     })
-    setTimeout(function() {
-      msg.edit("🔄 **| Porn spam Starting...**")
-      setTimeout(function() {
-        msg.edit("✅ **| Porn spam Started**")
-      }, 6000)
-    }, 6000)
-  })  //edit the message to look cool
+   //edit the message to look cool
   setInterval(() => {
     var hello2 = hello[Math.floor(Math.random() * hello.length)];
     console.log(hello2)
