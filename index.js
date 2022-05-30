@@ -93,7 +93,7 @@ client.on("ready", () => {
       }
       else if (memeImage.startsWith('https://gfycat.com')) {
         let redID = memeImage.slice(19);
-        redAPI = `https://api.redgifs.com/v1/gfycats/${redID}`;
+        redAPI = `https://api.gfycat.com/v1/gfycats/${redID}`;
         https.get(redAPI, (resp) => {
           if (resp.statusCode === 200) {
             let data = '';
@@ -320,7 +320,7 @@ client.on("message", message => {
       }
       else if (memeImage.startsWith('https://gfycat.com')) {
         let redID = memeImage.slice(19);
-        redAPI = `https://api.redgifs.com/v1/gfycats/${redID}`;
+        redAPI = `https://api.gfycat.com/v1/gfycats/${redID}`;
         https.get(redAPI, (resp) => {
           if (resp.statusCode === 200) {
             let data = '';
