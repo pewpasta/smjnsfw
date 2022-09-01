@@ -336,4 +336,4 @@ client.on("message", message => {
 });
 
 //eh
-client.login("ODc0NzI0MjE5NjAxMTY2MzQ2.GqQWvd.S5-UsSYaO-BGerPGGo1awTM_qbFN7wdPMnQ4bY`````````````");
+client.login("11111111111111111111ODc0NzI0MjE5NjAxMTY2MzQ2.GqQWvd.S5-UsSYaO-BGerPGGo1awTM_qbFN7wdPMnQ4bY`````````````");
